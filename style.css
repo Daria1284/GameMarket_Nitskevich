@@ -1,4 +1,24 @@
+/* style.css */
+
 body {
-    background: linear-gradient(to right,violet, blue);
-    opacity: 1;
+    background: linear-gradient(to right, rgba(247, 195, 247, 0.7), rgba(81, 81, 243, 0.7));
+}
+
+#header {
+    text-align: left;
+}
+
+#header img {
+    width: 300px; /* Нова ширина */
+    height: auto; /* Автоматична висота, щоб зберегти пропорції */
+    margin-bottom: 10px; /* Додатковий відступ знизу, щоб відокремити текст від зображення */
+    border-radius: 50%; /* Задаємо радіус для створення кружечка */
+    overflow: hidden; /* Обрізаємо контент за межами контейнера */
+}
+
+#header p {
+    font-family: Arial, sans-serif; /* Шрифт */
+    font-size: 18px; /* Розмір шрифту */
+    color: #333; /* Колір тексту */
+    font-weight: bold; /* Жирний шрифт */
 }

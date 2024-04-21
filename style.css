@@ -56,3 +56,20 @@ body {
     background-color: #f0f0f0; /* Зміна колір при наведенні на кнопку */
 }
 
+.daria-button {
+    /* Ваші стилі для кнопки "Ніцкевич Даря" тут */
+    background-color: #3c1553; /* Зелений колір фону */
+    color: white; /* Білий колір тексту */
+    border: none; /* Видалення рамки */
+    padding: 10px 20px; /* Внутрішні відступи */
+    text-align: center; /* Вирівнювання тексту по центру */
+    text-decoration: none; /* Видалення підкреслення */
+    display: inline-block; /* Показати як блочний елемент */
+    font-size: 16px; /* Розмір шрифту */
+    margin: 4px 2px; /* Зовнішні відступи */
+    cursor: pointer; /* Зміна курсору при наведенні */
+    border-radius: 8px; /* Закруглені кути */
+}
+.daria-button:hover {
+    background-color: #5a176d; /* Зміна колір при наведенні на кнопку */
+}

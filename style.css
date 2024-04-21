@@ -38,4 +38,21 @@ body {
 .game-button:hover {
     background-color: #45a049; /* Зелений колір фону кнопки при наведенні */
 }
+/* style.css */
+
+.menu-button {
+    position: fixed; /* Фіксована позиція */
+    top: 20px; /* Відступ зверху */
+    left: 20px; /* Відступ зліва */
+    padding: 15px 30px; /* Додатковий відступ для кнопки */
+    font-size: 24px; /* Збільшуємо розмір шрифту кнопки */
+    background-color: #fff; /* Колір фону кнопки */
+    border: 2px solid #333; /* Товщина та колір межі кнопки */
+    border-radius: 10px; /* Радіус кутів кнопки */
+    cursor: pointer; /* Змінюємо вигляд курсора при наведенні на кнопку */
+}
+
+.menu-button:hover {
+    background-color: #f0f0f0; /* Зміна колір при наведенні на кнопку */
+}
 

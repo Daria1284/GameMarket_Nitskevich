@@ -32,6 +32,14 @@ menuButton.addEventListener('click', function() {
 
             // Додаємо кнопку "Ніцкевич Даря" до контейнера
             menuContainer.appendChild(dariaButton);
+
+            // Встановлюємо стилі для кнопки "Ніцкевич Даря", щоб вона з'явилась під кнопкою "Гра"
+            dariaButton.style.position = 'absolute';
+            dariaButton.style.left = gameButton.offsetLeft + 'px';
+            dariaButton.style.top = gameButton.offsetTop + gameButton.offsetHeight + 20 + 'px'; // встановлюємо верхню позицію кнопки "Ніцкевич Даря" з відступом в 20 пікселів від нижньої границі кнопки "Гра"
+
+            // Оновлюємо стан меню
+            isMenuOpen = true;
         });
 
         // Додаємо кнопку "Гра" до контейнера

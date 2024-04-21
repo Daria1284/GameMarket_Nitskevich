@@ -54,17 +54,34 @@ menuButton.addEventListener('click', function() {
             }
         });
 
-        // Додаємо кнопку "Гра" до контейнера
+        // Створюємо кнопку "Власники"
+        var ownersButton = document.createElement('button');
+        ownersButton.textContent = 'Власники';
+        ownersButton.classList.add('owners-button');
+
+        // Додаємо обробник події при кліку на кнопку "Власники"
+        ownersButton.addEventListener('click', function() {
+            // Відкриваємо посилання на власників
+            window.open('https://daria1284.github.io/');
+        });
+
+        // Додаємо кнопку "Ігри" до контейнера
         menuContainer.appendChild(gameButton);
+
+        // Додаємо кнопку "Власники" до контейнера
+        menuContainer.appendChild(ownersButton);
 
         // Додаємо контейнер до body
         document.body.appendChild(menuContainer);
 
-        // Встановлюємо стилі для контейнера, щоб кнопки з'явилися під кнопкою меню на відстані 2 см
+        // Встановлюємо стилі для контейнера, щоб кнопки з'явилися під кнопкою меню на відстані 1 см
         var menuButtonRect = menuButton.getBoundingClientRect(); // отримуємо розміри кнопки меню
         menuContainer.style.position = 'absolute'; // задаємо абсолютне позиціонування
         menuContainer.style.left = menuButtonRect.left + 'px'; // встановлюємо ліву позицію контейнера відносно кнопки меню
-        menuContainer.style.top = (menuButtonRect.bottom + 20) + 'px'; // встановлюємо верхню позицію контейнера з відступом в 20 пікселів від нижньої границі кнопки меню
+        menuContainer.style.top = (menuButtonRect.bottom + 10) + 'px'; // встановлюємо верхню позицію контейнера з відступом в 10 пікселів від нижньої границі кнопки меню
+
+        // Встановлюємо ліву позицію кнопки "Власники" так само, як кнопки "Меню"
+        ownersButton.style.left = menuButtonRect.left + 'px';
 
         // Оновлюємо стан меню
         isMenuOpen = true;

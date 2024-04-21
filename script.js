@@ -8,7 +8,7 @@ var isMenuOpen = false;
 menuButton.addEventListener('click', function() {
     // Перевіряємо стан меню
     if (!isMenuOpen) {
-        // Створюємо контейнер для кнопки "Гра" та додаткового вмісту меню
+        // Створюємо контейнер для кнопок "Гра" та "Ніцкевич Даря"
         var menuContainer = document.createElement('div');
         menuContainer.classList.add('menu-container');
 
@@ -19,8 +19,19 @@ menuButton.addEventListener('click', function() {
 
         // Додаємо обробник події при кліку на кнопку "Гра"
         gameButton.addEventListener('click', function() {
-            // Відкриваємо посилання на гру
-            window.open('https://daria1284.github.io/Phaser2ndGame/');
+            // Створюємо кнопку "Ніцкевич Даря"
+            var dariaButton = document.createElement('button');
+            dariaButton.textContent = 'Ніцкевич Даря';
+            dariaButton.classList.add('daria-button');
+
+            // Додаємо обробник події при кліку на кнопку "Ніцкевич Даря"
+            dariaButton.addEventListener('click', function() {
+                // Відкриваємо посилання на гру
+                window.open('https://daria1284.github.io/Phaser2ndGame/');
+            });
+
+            // Додаємо кнопку "Ніцкевич Даря" до контейнера
+            menuContainer.appendChild(dariaButton);
         });
 
         // Додаємо кнопку "Гра" до контейнера
@@ -29,7 +40,7 @@ menuButton.addEventListener('click', function() {
         // Додаємо контейнер до body
         document.body.appendChild(menuContainer);
 
-        // Встановлюємо стилі для контейнера, щоб кнопка "Гра" з'явилась під кнопкою меню на відстані 2 см
+        // Встановлюємо стилі для контейнера, щоб кнопки з'явилися під кнопкою меню на відстані 2 см
         var menuButtonRect = menuButton.getBoundingClientRect(); // отримуємо розміри кнопки меню
         menuContainer.style.position = 'absolute'; // задаємо абсолютне позиціонування
         menuContainer.style.left = menuButtonRect.left + 'px'; // встановлюємо ліву позицію контейнера відносно кнопки меню

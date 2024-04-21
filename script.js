@@ -15,7 +15,7 @@ menuButton.addEventListener('click', function() {
 
         // Створюємо кнопку "Гра"
         var gameButton = document.createElement('button');
-        gameButton.textContent = 'Гра';
+        gameButton.textContent = 'Ігри';
         gameButton.classList.add('game-button');
 
         // Додаємо обробник події при кліку на кнопку "Гра"

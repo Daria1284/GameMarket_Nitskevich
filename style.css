@@ -21,4 +21,21 @@ body {
     font-size: 18px; /* Розмір шрифту */
     color: #333; /* Колір тексту */
     font-weight: bold; /* Жирний шрифт */
+
+
 }
+.game-button {
+    font-size: 24px; /* Збільшуємо розмір тексту кнопки */
+    padding: 15px 30px; /* Додаємо внутрішній відступ кнопки */
+    border: none; /* Видаляємо рамку кнопки */
+    background-color: #4CAF50; /* Зелений колір фону кнопки */
+    color: white; /* Колір тексту кнопки */
+    border-radius: 10px; /* Задаємо радіуси кутів кнопки */
+    cursor: pointer; /* Змінюємо курсор при наведенні на кнопку */
+    transition: background-color 0.3s ease; /* Анімація зміни кольору фону */
+}
+
+.game-button:hover {
+    background-color: #45a049; /* Зелений колір фону кнопки при наведенні */
+}
+

@@ -3,6 +3,7 @@ var menuButton = document.createElement('button');
 menuButton.textContent = 'Меню';
 menuButton.classList.add('menu-button');
 var isMenuOpen = false;
+var isGameOpen = false; // Додаємо змінну для відстеження стану кнопки "Гра"
 
 // Додаємо обробник події при кліку на кнопку меню
 menuButton.addEventListener('click', function() {
@@ -19,27 +20,38 @@ menuButton.addEventListener('click', function() {
 
         // Додаємо обробник події при кліку на кнопку "Гра"
         gameButton.addEventListener('click', function() {
-            // Створюємо кнопку "Ніцкевич Даря"
-            var dariaButton = document.createElement('button');
-            dariaButton.textContent = "Ніцкевич Дар'я";
-            dariaButton.classList.add('daria-button');
+            if (!isGameOpen) {
+                // Створюємо кнопку "Ніцкевич Даря"
+                var dariaButton = document.createElement('button');
+                dariaButton.textContent = "Ніцкевич Дар'я";
+                dariaButton.classList.add('daria-button');
 
-            // Додаємо обробник події при кліку на кнопку "Ніцкевич Даря"
-            dariaButton.addEventListener('click', function() {
-                // Відкриваємо посилання на гру
-                window.open('https://daria1284.github.io/Phaser2ndGame/');
-            });
+                // Додаємо обробник події при кліку на кнопку "Ніцкевич Даря"
+                dariaButton.addEventListener('click', function() {
+                    // Відкриваємо посилання на гру
+                    window.open('https://daria1284.github.io/Phaser2ndGame/');
+                });
 
-            // Додаємо кнопку "Ніцкевич Даря" до контейнера
-            menuContainer.appendChild(dariaButton);
+                // Додаємо кнопку "Ніцкевич Даря" до контейнера
+                menuContainer.appendChild(dariaButton);
 
-            // Встановлюємо стилі для кнопки "Ніцкевич Даря", щоб вона з'явилась під кнопкою "Гра"
-            dariaButton.style.position = 'absolute';
-            dariaButton.style.left = gameButton.offsetLeft + 'px';
-            dariaButton.style.top = gameButton.offsetTop + gameButton.offsetHeight + 20 + 'px'; // встановлюємо верхню позицію кнопки "Ніцкевич Даря" з відступом в 20 пікселів від нижньої границі кнопки "Гра"
+                // Встановлюємо стилі для кнопки "Ніцкевич Даря", щоб вона з'явилась під кнопкою "Гра"
+                dariaButton.style.position = 'absolute';
+                dariaButton.style.left = gameButton.offsetLeft + 'px';
+                dariaButton.style.top = gameButton.offsetTop + gameButton.offsetHeight + 20 + 'px'; // встановлюємо верхню позицію кнопки "Ніцкевич Даря" з відступом в 20 пікселів від нижньої границі кнопки "Гра"
 
-            // Оновлюємо стан меню
-            isMenuOpen = true;
+                // Оновлюємо стан кнопки "Гра"
+                isGameOpen = true;
+            } else {
+                // Видаляємо кнопку "Ніцкевич Даря", якщо вона вже відкрита
+                var dariaButton = document.querySelector('.daria-button');
+                if (dariaButton) {
+                    dariaButton.remove();
+                }
+
+                // Оновлюємо стан кнопки "Гра"
+                isGameOpen = false;
+            }
         });
 
         // Додаємо кнопку "Гра" до контейнера
@@ -53,7 +65,7 @@ menuButton.addEventListener('click', function() {
         menuContainer.style.position = 'absolute'; // задаємо абсолютне позиціонування
         menuContainer.style.left = menuButtonRect.left + 'px'; // встановлюємо ліву позицію контейнера відносно кнопки меню
         menuContainer.style.top = (menuButtonRect.bottom + 20) + 'px'; // встановлюємо верхню позицію контейнера з відступом в 20 пікселів від нижньої границі кнопки меню
-        
+
         // Оновлюємо стан меню
         isMenuOpen = true;
     } else {
@@ -62,7 +74,7 @@ menuButton.addEventListener('click', function() {
         if (menuContainer) {
             menuContainer.remove();
         }
-        
+
         // Оновлюємо стан меню
         isMenuOpen = false;
     }

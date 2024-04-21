@@ -21,7 +21,7 @@ menuButton.addEventListener('click', function() {
         gameButton.addEventListener('click', function() {
             // Створюємо кнопку "Ніцкевич Даря"
             var dariaButton = document.createElement('button');
-            dariaButton.textContent = 'Ніцкевич Даря';
+            dariaButton.textContent = "Ніцкевич Дар'я";
             dariaButton.classList.add('daria-button');
 
             // Додаємо обробник події при кліку на кнопку "Ніцкевич Даря"

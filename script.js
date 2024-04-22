@@ -4,6 +4,14 @@ menuButton.textContent = 'Меню';
 menuButton.classList.add('menu-button');
 var isMenuOpen = false;
 var isGameOpen = false; // Додаємо змінну для відстеження стану кнопки "Гра"
+// Створюємо елемент header
+var header = document.createElement('header');
+
+// Додаємо стилі для header
+header.style.backgroundColor = '#f0f0f0'; // світло чорний колір
+
+// Додаємо header до body
+document.body.insertBefore(header, document.body.firstChild);
 
 // Додаємо обробник події при кліку на кнопку меню
 menuButton.addEventListener('click', function() {
@@ -36,7 +44,7 @@ menuButton.addEventListener('click', function() {
                 menuContainer.appendChild(dariaButton);
 
                 // Встановлюємо стилі для кнопки "Ніцкевич Даря", щоб вона з'явилась під кнопкою "Гра"
-                dariaButton.style.position = 'absolute';
+                dariaButton.style.position = 'fixed';
                 dariaButton.style.left = gameButton.offsetLeft + 'px';
                 dariaButton.style.top = gameButton.offsetTop + gameButton.offsetHeight + 20 + 'px'; // встановлюємо верхню позицію кнопки "Ніцкевич Даря" з відступом в 20 пікселів від нижньої границі кнопки "Гра"
 

@@ -1,11 +1,19 @@
 /* style.css */
 
 body {
-    background: linear-gradient(to right, rgba(247, 195, 247, 0.7), rgba(81, 81, 243, 0.7));
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.7), rgba(82, 82, 92, 0.7));
 }
 
 #header {
+    position: fixed; /* Фіксована позиція */
+    top: 0; /* Встановлення верхньої межі */
+    left: 0; /* Встановлення лівої межі */
+    width: 100%; /* Розтягнути заголовок на всю ширину сторінки */
+    height: 100px; /* Встановлення висоти заголовка */
     text-align: center;
+    background-color: #464444; /* Додавання чорного колору фону */
+    padding: 0px 0; /* Додатковий внутрішній відступ для тексту від меж заголовка */
+    margin: 0 auto; /* Центрування заголовка на сторінці */
 }
 
 #header img {
@@ -24,25 +32,10 @@ body {
 
 
 }
-.game-button {
-    font-size: 24px; /* Збільшуємо розмір тексту кнопки */
-    padding: 15px 30px; /* Додаємо внутрішній відступ кнопки */
-    border: none; /* Видаляємо рамку кнопки */
-    background-color: #000000; /* Зелений колір фону кнопки */
-    color: white; /* Колір тексту кнопки */
-    border-radius: 10px; /* Задаємо радіуси кутів кнопки */
-    cursor: pointer; /* Змінюємо курсор при наведенні на кнопку */
-    transition: background-color 0.3s ease; /* Анімація зміни кольору фону */
-}
-
-.game-button:hover {
-    background-color: #292929; /* Зелений колір фону кнопки при наведенні */
-}
-/* style.css */
 
 .menu-button {
     position: fixed; /* Фіксована позиція */
-    top: 20px; /* Відступ зверху */
+    top: 110px; /* Змінено відступ зверху, щоб кнопка була нижче */
     left: 20px; /* Відступ зліва */
     padding: 15px 30px; /* Додатковий відступ для кнопки */
     font-size: 24px; /* Збільшуємо розмір шрифту кнопки */
@@ -55,6 +48,27 @@ body {
 .menu-button:hover {
     background-color: #f0f0f0; /* Зміна колір при наведенні на кнопку */
 }
+
+.game-button {
+    font-size: 24px; /* Збільшуємо розмір тексту кнопки */
+    padding: 15px 30px; /* Додаємо внутрішній відступ кнопки */
+    border: none; /* Видаляємо рамку кнопки */
+    background-color: #000000; /* Зелений колір фону кнопки */
+    color: white; /* Колір тексту кнопки */
+    border-radius: 10px; /* Задаємо радіуси кутів кнопки */
+    cursor: pointer; /* Змінюємо курсор при наведенні на кнопку */
+    transition: background-color 0.3s ease; /* Анімація зміни кольору фону */
+    position: fixed; /* Фіксована позиція */
+    top: 190px; /* Змінено відступ зверху, щоб кнопка була нижче */
+    left: 20px; /* Відступ зліва */
+}
+
+.game-button:hover {
+    background-color: #292929; /* Зелений колір фону кнопки при наведенні */
+}
+/* style.css */
+
+
 
 .daria-button {
     /* Ваші стилі для кнопки "Ніцкевич Даря" тут */
@@ -69,7 +83,11 @@ body {
     margin: 4px 2px; /* Зовнішні відступи */
     cursor: pointer; /* Зміна курсору при наведенні */
     border-radius: 8px; /* Закруглені кути */
+    position: fixed; /* Фіксована позиція */
+    top: 250px; /* Сума значення top для .game-button та 1 см відступу знизу */
+    left: 20px; /* Відступ зліва */
 }
+
 .daria-button:hover {
     background-color: #5a176d; /* Зміна колір при наведенні на кнопку */
-}
+} 

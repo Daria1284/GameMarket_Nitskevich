@@ -73,20 +73,20 @@ menuButton.addEventListener('click', function() {
             window.open('https://daria1284.github.io/');
         });
 
-        // Додаємо кнопку "Ігри" до контейнера
-        menuContainer.appendChild(gameButton);
-
         // Додаємо кнопку "Власники" до контейнера
         menuContainer.appendChild(ownersButton);
+
+        // Додаємо кнопку "Ігри" до контейнера
+        menuContainer.appendChild(gameButton);
 
         // Додаємо контейнер до body
         document.body.appendChild(menuContainer);
 
         // Встановлюємо стилі для контейнера, щоб кнопки з'явилися під кнопкою меню на відстані 1 см
         var menuButtonRect = menuButton.getBoundingClientRect(); // отримуємо розміри кнопки меню
-        menuContainer.style.position = 'absolute'; // задаємо абсолютне позиціонування
+        menuContainer.style.position = 'fixed'; // задаємо абсолютне позиціонування
         menuContainer.style.left = menuButtonRect.left + 'px'; // встановлюємо ліву позицію контейнера відносно кнопки меню
-        menuContainer.style.top = (menuButtonRect.bottom + 10) + 'px'; // встановлюємо верхню позицію контейнера з відступом в 10 пікселів від нижньої границі кнопки меню
+        menuContainer.style.top = (menuButtonRect.bottom + 100) + 'px'; // встановлюємо верхню позицію контейнера з відступом в 10 пікселів від нижньої границі кнопки меню
 
         // Встановлюємо ліву позицію кнопки "Власники" так само, як кнопки "Меню"
         ownersButton.style.left = menuButtonRect.left + 'px';
@@ -105,5 +105,5 @@ menuButton.addEventListener('click', function() {
     }
 });
 
-// Додаємо кнопку меню до body
+// Створюємо кнопку "Ігри"
 document.body.appendChild(menuButton);

@@ -4,6 +4,8 @@ menuButton.textContent = 'Меню';
 menuButton.classList.add('menu-button');
 var isMenuOpen = false;
 var isGameOpen = false; // Додаємо змінну для відстеження стану кнопки "Гра"
+var isOwnersOpen = false; // Додаємо змінну для відстеження стану кнопки "Власники"
+
 // Створюємо елемент header
 var header = document.createElement('header');
 
@@ -29,6 +31,11 @@ menuButton.addEventListener('click', function() {
         // Додаємо обробник події при кліку на кнопку "Гра"
         gameButton.addEventListener('click', function() {
             if (!isGameOpen) {
+                closeAllMenus(); // Закриваємо всі інші вкладки
+                // Створюємо контейнер для вкладки "Ніцкевич Даря"
+                var gameContainer = document.createElement('div');
+                gameContainer.classList.add('game-container');
+
                 // Створюємо кнопку "Ніцкевич Даря"
                 var dariaButton = document.createElement('button');
                 dariaButton.textContent = "Ніцкевич Дар'я";
@@ -41,23 +48,30 @@ menuButton.addEventListener('click', function() {
                 });
 
                 // Додаємо кнопку "Ніцкевич Даря" до контейнера
-                menuContainer.appendChild(dariaButton);
+                gameContainer.appendChild(dariaButton);
 
-                // Встановлюємо стилі для кнопки "Ніцкевич Даря", щоб вона з'явилась під кнопкою "Гра"
-                dariaButton.style.position = 'fixed';
-                dariaButton.style.left = gameButton.offsetLeft + 'px';
-                dariaButton.style.top = gameButton.offsetTop + gameButton.offsetHeight + 20 + 'px'; // встановлюємо верхню позицію кнопки "Ніцкевич Даря" з відступом в 20 пікселів від нижньої границі кнопки "Гра"
+                // Додаємо контейнер вкладки "Ніцкевич Даря" до body
+                document.body.appendChild(gameContainer);
 
-                // Оновлюємо стан кнопки "Гра"
+                // Оновлюємо стан вкладки "Гра"
                 isGameOpen = true;
+
+                // Перевіряємо, чи відкрита вкладка "Власники" і при потребі закриваємо її
+                if (isOwnersOpen) {
+                    var ownersContainer = document.querySelector('.owners-container');
+                    if (ownersContainer) {
+                        ownersContainer.remove();
+                        isOwnersOpen = false;
+                    }
+                }
             } else {
-                // Видаляємо кнопку "Ніцкевич Даря", якщо вона вже відкрита
-                var dariaButton = document.querySelector('.daria-button');
-                if (dariaButton) {
-                    dariaButton.remove();
+                // Видаляємо контейнер вкладки "Ніцкевич Даря", якщо вона вже відкрита
+                var gameContainer = document.querySelector('.game-container');
+                if (gameContainer) {
+                    gameContainer.remove();
                 }
 
-                // Оновлюємо стан кнопки "Гра"
+                // Оновлюємо стан вкладки "Гра"
                 isGameOpen = false;
             }
         });
@@ -69,8 +83,44 @@ menuButton.addEventListener('click', function() {
 
         // Додаємо обробник події при кліку на кнопку "Власники"
         ownersButton.addEventListener('click', function() {
-            // Відкриваємо посилання на власників
-            window.open('https://daria1284.github.io/');
+            if (!isOwnersOpen) {
+                closeAllMenus(); // Закриваємо всі інші вкладки
+                // Створюємо контейнер для власників
+                var ownersContainer = document.createElement('div');
+                ownersContainer.classList.add('owners-container');
+
+                // Створюємо вміст для вкладки власників
+                var ownersContent = document.createElement('p');
+                ownersContent.textContent = 'Власники: Дар\'я Ніцкевич';
+                ownersContent.classList.add('owners-content');
+
+                // Додаємо вміст до контейнера
+                ownersContainer.appendChild(ownersContent);
+
+                // Додаємо контейнер до body
+                document.body.appendChild(ownersContainer);
+
+                // Оновлюємо стан вкладки "Власники"
+                isOwnersOpen = true;
+
+                // Перевіряємо, чи відкрита вкладка "Ігри" і при потребі закриваємо її
+                if (isGameOpen) {
+                    var gameContainer = document.querySelector('.game-container');
+                    if (gameContainer) {
+                        gameContainer.remove();
+                        isGameOpen = false;
+                    }
+                }
+            } else {
+                // Видаляємо контейнер власників, якщо він вже відкритий
+                var ownersContainer = document.querySelector('.owners-container');
+                if (ownersContainer) {
+                    ownersContainer.remove();
+                }
+
+                // Оновлюємо стан вкладки "Власники"
+                isOwnersOpen = false;
+            }
         });
 
         // Додаємо кнопку "Власники" до контейнера
@@ -104,6 +154,27 @@ menuButton.addEventListener('click', function() {
         isMenuOpen = false;
     }
 });
+
+// Функція для закриття всіх вкладок
+function closeAllMenus() {
+    var menuContainer = document.querySelector('.menu-container');
+    if (menuContainer) {
+        menuContainer.remove();
+    }
+    var gameContainer = document.querySelector('.game-container');
+    if (gameContainer) {
+        gameContainer.remove();
+    }
+    var ownersContainer = document.querySelector('.owners-container');
+    if (ownersContainer) {
+        ownersContainer.remove();
+    }
+
+    // Оновлюємо стани всіх вкладок
+    isMenuOpen = false;
+    isGameOpen = false;
+    isOwnersOpen = false;
+}
 
 // Створюємо кнопку "Ігри"
 document.body.appendChild(menuButton);

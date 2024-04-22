@@ -29,8 +29,6 @@ body {
     font-size: 18px; /* Розмір шрифту */
     color: #333; /* Колір тексту */
     font-weight: bold; /* Жирний шрифт */
-
-
 }
 
 .menu-button {
@@ -50,25 +48,23 @@ body {
 }
 
 .game-button {
-    font-size: 24px; /* Збільшуємо розмір тексту кнопки */
-    padding: 15px 30px; /* Додаємо внутрішній відступ кнопки */
-    border: none; /* Видаляємо рамку кнопки */
+    font-size: 20px; /* Збільшуємо розмір тексту кнопки */
+    padding: 12px 24px; /* Додаємо внутрішній відступ кнопки */
+    border: 2px solid black; /* Додаємо рамку кнопці */
     background-color: #000000; /* Зелений колір фону кнопки */
     color: white; /* Колір тексту кнопки */
     border-radius: 10px; /* Задаємо радіуси кутів кнопки */
     cursor: pointer; /* Змінюємо курсор при наведенні на кнопку */
-    transition: background-color 0.3s ease; /* Анімація зміни кольору фону */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Плавна зміна кольору фону та тексту при наведенні */
     position: fixed; /* Фіксована позиція */
     top: 190px; /* Змінено відступ зверху, щоб кнопка була нижче */
     left: 20px; /* Відступ зліва */
 }
 
 .game-button:hover {
-    background-color: #292929; /* Зелений колір фону кнопки при наведенні */
+    background-color: #868686; /* Жовтий колір фону кнопки при наведенні */
+    color: #000000; /* Колір тексту кнопки при наведенні */
 }
-/* style.css */
-
-
 
 .daria-button {
     /* Ваші стилі для кнопки "Ніцкевич Даря" тут */
@@ -90,4 +86,21 @@ body {
 
 .daria-button:hover {
     background-color: #5a176d; /* Зміна колір при наведенні на кнопку */
-} 
+}
+
+.owners-button {
+    font-size: 20px; /* Збільшення розміру шрифту */
+    padding: 12px 24px; /* Додаткові відступи для кнопки */
+    background-color: #000000; /* Жовтий колір фону кнопки */
+    color: #ffffff; /* Колір тексту кнопки */
+    border-radius: 10px; /* Закруглені кути кнопки */
+    cursor: pointer; /* Зміна вигляду курсору при наведенні на кнопку */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Плавна зміна кольору фону та тексту при наведенні */
+}
+
+.owners-button:hover {
+    background-color: #868686; /* Жовтий колір фону кнопки при наведенні */
+    color: #000000; /* Колір тексту кнопки при наведенні */
+}
+
+/* style.css */

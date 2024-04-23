@@ -83,47 +83,27 @@ menuButton.addEventListener('click', function() {
         ownersButton.textContent = 'Власники';
         ownersButton.classList.add('owners-button');
 
-        // Додаємо обробник події при кліку на кнопку "Власники"
-        ownersButton.addEventListener('click', function() {
-            if (!isOwnersOpen) {
-                closeAllMenus(); // Закриваємо всі інші вкладки
-                // Створюємо контейнер для власників
-                var ownersContainer = document.createElement('div');
-                ownersContainer.classList.add('owners-container');
+// Додаємо обробник події при кліку на кнопку "Власники"
+ownersButton.addEventListener('click', function() {
+    closeAllMenus(); // Закриваємо всі інші вкладки
+    
+    // Створюємо контейнер для нового простору з білим фоном
+    var whiteSpace = document.createElement('div');
+    whiteSpace.classList.add('white-space'); // Додаємо клас для стилізації
 
-                // Створюємо вміст для вкладки власників
-                var ownersContent = document.createElement('p');
-                ownersContent.textContent = 'Власники: Дар\'я Ніцкевич';
-                ownersContent.classList.add('owners-content');
+    // Додаємо стилі для контейнера з білим фоном
+    whiteSpace.style.backgroundColor = '#ffffff'; // Білий колір фону
+    whiteSpace.style.position = 'fixed'; // Абсолютне позиціонування
+    whiteSpace.style.top = '0'; // Позиція зверху
+    whiteSpace.style.left = '0'; // Позиція зліва
+    whiteSpace.style.width = '100%'; // Ширина на всю ширину вікна
+    whiteSpace.style.height = '100%'; // Висота на всю висоту вікна
+    whiteSpace.style.zIndex = '9999'; // Збільшуємо z-index, щоб він був над усіма іншими елементами
 
-                // Додаємо вміст до контейнера
-                ownersContainer.appendChild(ownersContent);
+    // Додаємо контейнер з білим фоном до body
+    document.body.appendChild(whiteSpace);
+});
 
-                // Додаємо контейнер до body
-                document.body.appendChild(ownersContainer);
-
-                // Оновлюємо стан вкладки "Власники"
-                isOwnersOpen = true;
-
-                // Перевіряємо, чи відкрита вкладка "Ігри" і при потребі закриваємо її
-                if (isGameOpen) {
-                    var gameContainer = document.querySelector('.game-container');
-                    if (gameContainer) {
-                        gameContainer.remove();
-                        isGameOpen = false;
-                    }
-                }
-            } else {
-                // Видаляємо контейнер власників, якщо він вже відкритий
-                var ownersContainer = document.querySelector('.owners-container');
-                if (ownersContainer) {
-                    ownersContainer.remove();
-                }
-
-                // Оновлюємо стан вкладки "Власники"
-                isOwnersOpen = false;
-            }
-        });
 
         // Додаємо кнопку "Власники" до контейнера
         menuContainer.appendChild(ownersButton);

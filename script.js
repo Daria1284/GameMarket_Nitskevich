@@ -17,6 +17,8 @@ document.body.insertBefore(header, document.body.firstChild);
 
 // Додаємо обробник події при кліку на кнопку меню
 menuButton.addEventListener('click', function() {
+  
+        closeAllMenus(); // Закриваємо всі вкладки
     // Перевіряємо стан меню
     if (!isMenuOpen) {
         // Створюємо контейнер для кнопок "Гра" та "Ніцкевич Даря"

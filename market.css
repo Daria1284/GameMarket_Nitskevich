@@ -1,24 +1,20 @@
 body {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     font-family: Roboto;
     background: rgb(235, 216, 216);
     display: flex;
-    
-    justify-content: flex-start; 
-    
+    justify-content: center;
+    align-items: center;
 }
 
-content {
+.content {
     width: 460px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     gap: 10px;
 }
-
-
 
 .header {
     background: rgb(173, 4, 4);
@@ -32,9 +28,7 @@ content {
     text-align: center;
     font-weight: bold;
     letter-spacing: 3px;
- 
 }
-
 
 .items {
     flex-wrap: wrap;
@@ -42,7 +36,7 @@ content {
     justify-content: space-between;
 }
 
-.item-tittle{
+.item-tittle {
     font-weight: bold;
 }
 
@@ -78,7 +72,7 @@ content {
 }
 
 .prise div:first-child span {
-    text-decoration-line: line-through ;
+    text-decoration-line: line-through;
 }
 
 .prise div:first-child sup {
@@ -120,18 +114,15 @@ content {
     color: grey;
 }
 
-
 .item {
     min-width: 200px;
     min-height: 320px;
     margin-bottom: 10px;
     padding: 10px;
-
     background-color: #ffffff;
-
     border: 1px solid rgb(194, 194, 194);
     border-radius: 5px;
-    box-shadow: 0 0 7px black ;
+    box-shadow: 0 0 7px black;
 }
 
 .contacts p {
@@ -149,5 +140,5 @@ content {
 .license {
     font-size: 9px;
     text-align: justify;
-    color : rgb(120, 120, 120);
+    color: rgb(120, 120, 120);
 }

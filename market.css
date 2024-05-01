@@ -51,7 +51,9 @@ content {
     box-shadow: 0 0 7px black;
     
 }
-
+.bober{
+    font-weight: bold;
+}
 .item-tittle {
     font-weight: bold;
 }

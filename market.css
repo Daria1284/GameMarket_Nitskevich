@@ -9,12 +9,12 @@ body {
     align-items: center;
 }
 
-.content {
+content {
     width: 460px;
     display: flex;
     flex-direction: column;
     gap: 10px;
-    margin-top: 30px; /* Adjust the margin as needed */
+    margin-top: 5px; 
 }
 
 
@@ -30,8 +30,8 @@ body {
     text-align: center;
     font-weight: bold;
     letter-spacing: 3px;
-    margin-bottom: 50px;
-    margin-top: 15px ;
+    margin-bottom: 10px;
+    margin-top: 10px ;
 }
 
 .items {

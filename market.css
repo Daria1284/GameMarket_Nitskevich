@@ -14,7 +14,9 @@ body {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    margin-top: 30px; /* Adjust the margin as needed */
 }
+
 
 .header {
     background: rgb(173, 4, 4);
@@ -28,6 +30,8 @@ body {
     text-align: center;
     font-weight: bold;
     letter-spacing: 3px;
+    margin-bottom: 50px;
+    margin-top: 15px ;
 }
 
 .items {

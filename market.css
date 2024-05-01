@@ -32,10 +32,7 @@ content {
     text-align: center;
     font-weight: bold;
     letter-spacing: 3px;
-    position: fixed;
-    top: 20px; /* Adjust the value to set the desired margin from the top */
-    left: 50%;
-    transform: translateX(-50%);
+ 
 }
 
 

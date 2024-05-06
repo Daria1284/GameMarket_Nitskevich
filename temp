@@ -1,0 +1,41 @@
+
+                <div class="items"> 
+                    <div class="item">
+                        <div class="bober">
+                            <div class="item-title1">Мотокоса 43</div>
+                        </div>
+                        <!-- <div class="item-title1">Мотокоса 43</div> -->
+
+                        <div class="item-image"></div>
+    
+                        <div class="parts-pay">
+                        <div><img src="img-market/mono-lapka.png" alt="">6</div>
+                        <div><img src="img-market/pb.png" alt="">8</div>
+                        </div>
+    
+                        <div class="prise">
+                        <div><span>5499 </span><sup>грн</sup></div>
+                        <div><span>4497 </span><sup>грн</sup></div>
+                        </div>
+    
+                        <div class="prise bonus">
+                        <div>ціна за купоном</div>
+                        <div><span>4395</span><sup>грн</sup></div>
+                        </div>
+                    </div>
+                    
+
+                    <div class="item">Тример</div>
+                    <div class="item">Газонокосарка</div>
+                    <div class="item">Оприскувач</div>
+                </div>
+            </div>
+            <div class="contacts">
+                <p>ЖИТОМИР</p>
+                <p>вул. Київська, 106</p>
+                <p> +38 (067) 414-53-30*</p>
+            </div>
+            <div class="license">*Знижка в розмірі сто гривень діє з Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                Quas officia distinctio itaque quisquam ratione fugit, incidunt sint, corporis iusto inventore facere.
+                 Voluptates, tenetur. Veritatis ex provident facilis, suscipit eaque minima. Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                 Corrupti quas tempore fugiat. Expedita, accusantium laborum soluta officiis, autem quisquam enim error sint explicabo ad magnam a deserunt qui excepturi nemo.

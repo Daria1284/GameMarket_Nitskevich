@@ -13,7 +13,7 @@ content {
     width: 420px;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 10bodpx;
     margin-top: 5px; 
 }
 

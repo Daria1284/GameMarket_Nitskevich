@@ -14,11 +14,14 @@ let itemsDiv = document.getElementById("items");
 //Перевірка існування знайденого блоку 
 if (itemsDiv) { 
      //Створення блоків по кількості елементів масиву
-itemsArray.forEach((item)=>{
+itemsArray.forEach((item,index)=>{
     //Спеціальний апостроф - Англійська розкладка - біля кнопки 1 ~
     // console.log(item)
     //Виводимо на веб сторінку елемент масиву в блок з класом item
-    itemsDiv.innerHTML += `<div class = "item">${item}</div>`
+    itemsDiv.innerHTML += `<div class = "item">
+    <h2>Товар№${index}</h2>
+    <p>${item}<p>
+    </div>`
 })
     //Додавання відформатованого HTML коду в блок 
     // itemsDiv.innerHTML += '<div class = "item"></div>' 

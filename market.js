@@ -14,7 +14,7 @@ let itemsDiv = document.getElementById("items");
 //Перевірка існування знайденого блоку 
 if (itemsDiv) { 
     //Виведення елементів масиву
-    console.log(item) 
+    console.log(items) 
     //Додавання відформатованого HTML коду в блок 
     // itemsDiv.innerHTML += '<div class = "item"></div>' 
     // itemsDiv.innerHTML += '<div class = "item"></div>' 

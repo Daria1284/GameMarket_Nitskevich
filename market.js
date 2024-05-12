@@ -19,7 +19,7 @@ itemsArray.forEach((item,index)=>{
     // console.log(item)
     //Виводимо на веб сторінку елемент масиву в блок з класом item
     itemsDiv.innerHTML += `<div class = "item">
-    <h2>Товар№${index}</h2>
+    <h2>Товар №${index}</h2>
     <p>${item}<p>
     </div>`
 })

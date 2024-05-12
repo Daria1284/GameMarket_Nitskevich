@@ -13,25 +13,27 @@ let itemsArray = [
 let itemsDiv = document.getElementById("items");
 //Перевірка існування знайденого блоку 
 if (itemsDiv) { 
-    //Виведення елементів масиву
-    console.log(items) 
+     //Створення блоків по кількості елементів масиву
+itemsArray.forEach((item)=>{
+    //Спеціальний апостроф - Англійська розкладка - біля кнопки 1 ~
+    // console.log(item)
+    //Виводимо на веб сторінку елемент масиву в блок з класом item
+    itemsDiv.innerHTML += `<div class = "item">${item}</div>`
+})
     //Додавання відформатованого HTML коду в блок 
     // itemsDiv.innerHTML += '<div class = "item"></div>' 
     // itemsDiv.innerHTML += '<div class = "item"></div>' 
     // itemsDiv.innerHTML += '<div class = "item"></div>' 
     // itemsDiv.innerHTML += '<div class = "item"></div>' 
-    for (let i =0; i<=100; i++){
-        itemsDiv.innerHTML += '<div class = "item"></div>'
-    }
+    // for (let i =0; i<=100; i++){
+    //     itemsDiv.innerHTML += '<div class = "item"></div>'
+    // }
 } else {
     //Вивід повідомлення про не знайдений блок 
     console.log('Блок товарів не знайдено')
 } 
 
-//Виведення елементів масиву
-itemsArray.forEach((item)=>{
-    console.log(item)
-})
+
 // //Виведення елементів відсортованого масиву
 // itemsArray.sort().forEach((item,index) =>{
 //     console.log(index + '-й елемент:',item)

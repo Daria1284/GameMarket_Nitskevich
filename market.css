@@ -59,7 +59,7 @@ content {
 }
 
 .item-image {
-    height: 180px;
+    height: 200px;
     background-image: url(img-market/1.png);
     background-size: 70%;
     background-repeat: no-repeat;

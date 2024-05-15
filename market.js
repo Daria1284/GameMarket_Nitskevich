@@ -4,18 +4,63 @@
 // let itemsDiv =document.getElementById("items"); 
 //Визначення масиву товарів
 let itemsArray = [
-    'Газоноосарка 43',
-    'Електричний тример 110',
-    'Електрична газонокосарка 32',
-    'Акумуляторний оприскувач 12 N',
-    'Газоноосарка 43',
-    'Електричний тример 110',
-    'Електрична газонокосарка 32',
-    'Акумуляторний оприскувач 12 N',
-    'Газоноосарка 43',
-    'Електричний тример 110',
-    'Електрична газонокосарка 32',
-    'Акумуляторний оприскувач 12 N',
+    {
+        firstName: "Вікторія",
+        lastName: "Нелипович",
+        age: "45",
+        subject: "Математика",
+        photo: "https://lyceum.ztu.edu.ua/wp-content/uploads/2023/04/nelypovych-viktoriya-vitaliyivna.jpg",
+        url: "https://lyceum.ztu.edu.ua/team/nelypovych-viktoriya-vitaliyivna/",
+        education: "Вища",
+        rank:"«викладач-методист»"
+    },
+    {
+        firstName: "Олена",
+        lastName: "Геча",
+        age: "42",
+        subject: "Історія",
+        photo: "https://lyceum.ztu.edu.ua/wp-content/uploads/2023/04/hecha-olena-anatoliyivna.jpg",
+        url: "https://lyceum.ztu.edu.ua/team/hecha-o-a/",
+        education: "Вища",
+        rank:" «старший вчитель»"
+    },
+    
+    {
+    firstName: "Лариса",
+    lastName: "Забелло",
+    age: "47",
+    subject: "Англійська мова",
+    photo: "https://lyceum.ztu.edu.ua/wp-content/uploads/2023/04/zabello-larysa-oleksandrivna.jpg",
+    url: "https://lyceum.ztu.edu.ua/team/zabello-l-o/",
+    education: "Вища",
+    rank:"«вчитель-методист»"
+},
+
+{
+    firstName: "Василь",
+    lastName: "Бабій",
+    age: "56",
+    subject: "Фізична культура",
+    photo: "https://lyceum.ztu.edu.ua/wp-content/uploads/2023/04/babiy-vasyl-dmytrovych.jpg",
+    url: "https://lyceum.ztu.edu.ua/team/babiy-vasyl-dmytrovych/",
+    education: "Вища",
+    rank:"«спеціаліст першої категорії»"
+},
+
+
+
+//     'Газоноосарка 43',
+//     'Електричний тример 110',
+//     'Електрична газонокосарка 32',
+//     'Акумуляторний оприскувач 12 N',
+//     'Газоноосарка 43',
+//     'Електричний тример 110',
+//     'Електрична газонокосарка 32',
+//     'Акумуляторний оприскувач 12 N',
+//     'Газоноосарка 43',
+//     'Електричний тример 110',
+//     'Електрична газонокосарка 32',
+//     'Акумуляторний оприскувач 12 N',
     
 ]
 //Отримання елементу з індифекатором items
@@ -27,11 +72,26 @@ itemsArray.forEach((item,index)=>{
     //Спеціальний апостроф - Англійська розкладка - біля кнопки 1 ~
     // console.log(item)
  // Виводимо на веб-сторінку елемент масиву в блок з класом item
- itemsDiv.innerHTML += `<div class="item">
- <h2>Товар №${index + 1} з ${itemsArray.length}</h2>
- <p>${item}</p>
- </div>`
+ itemsDiv.innerHTML += 
+ `
+ <div class="item">
+ <h2>Вчитель № ${index + 1} з ${itemsArray.length}</h2>
+ <p>${item.lastName} ${item.firstName}</p>
+ <p><img src="${item.photo}" alt="${item.lastName} ${item.firstName}" class="item-image"></p>
+ <p>Вік: ${item.age} </p>
+ <p>Предмет: ${item.subject} </p>
+ <p>Освіта: ${item.education} </p>
+ <p>Звання: ${item.rank} </p>
+ <p><a href="${item.url}" target ="_blank" >Профіль</a></p>
+
+ </div>
+    `
 })
+{/* <h2>Товар №${index + 1} з ${itemsArray.length}</h2>
+<p>${item}</p>
+</div>`
+}) */}
+
     //Додавання відформатованого HTML коду в блок 
     // itemsDiv.innerHTML += '<div class = "item"></div>' 
     // itemsDiv.innerHTML += '<div class = "item"></div>' 

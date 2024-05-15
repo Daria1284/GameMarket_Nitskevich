@@ -100,6 +100,7 @@ itemsArray.forEach((item,index)=>{
     // for (let i =0; i<=100; i++){
     //     itemsDiv.innerHTML += '<div class = "item"></div>'
     // }
+
 } else {
     //Вивід повідомлення про не знайдений блок 
     console.log('Блок товарів не знайдено')
@@ -122,3 +123,39 @@ itemsArray.forEach((item,index)=>{
 // for(let i = 0; i < itemsArray.length; i++){
 //     console.log(i +'-й елемент: ', itemsArray[i])
 // }
+// Початковий показ вчителів
+displayTeachers(itemsArray);
+
+function displayTeachers(teachers) {
+    let sortedTeachers = teachers.slice(); // Клонування масиву
+    itemsDiv.innerHTML = ''; // Очистити вміст контейнера
+
+    sortedTeachers.forEach((teacher, index) => {
+        itemsDiv.innerHTML +=
+            `<div class="item">
+                <h2>Вчитель № ${index + 1} з ${sortedTeachers.length}</h2>
+                <p>${teacher.lastName} ${teacher.firstName}</p>
+                <p><img src="${teacher.photo}" alt="${teacher.lastName} ${teacher.firstName}" class="item-image"></p>
+                <p>Вік: ${teacher.age} </p>
+                <p>Предмет: ${teacher.subject} </p>
+                <p>Освіта: ${teacher.education} </p>
+                <p>Звання: ${teacher.rank} </p>
+                <p><a href="${teacher.url}" target="_blank">Профіль</a></p>
+            </div>`;
+    });
+}
+
+function sortByAge() {
+    let sortedByAge = itemsArray.slice().sort((a, b) => parseInt(a.age) - parseInt(b.age));
+    displayTeachers(sortedByAge);
+}
+
+function sortByLastName() {
+    let sortedByLastName = itemsArray.slice().sort((a, b) => a.lastName.localeCompare(b.lastName));
+    displayTeachers(sortedByLastName);
+}
+
+function sortBySubject() {
+    let sortedBySubject = itemsArray.slice().sort((a, b) => a.subject.localeCompare(b.subject));
+    displayTeachers(sortedBySubject);
+}

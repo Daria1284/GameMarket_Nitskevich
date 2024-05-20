@@ -54,8 +54,11 @@ content {
 .bober{
     font-weight: bold;
 }
-.item-tittle {
+.item-title {
     font-weight: bold;
+    max-width: 180x;
+    min-height: 38px;
+    
 }
 
 .item-image {

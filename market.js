@@ -6,6 +6,16 @@
 let itemsArray = [
     {
         firstName: "Ірина",
+        lastName: "Боровська-Карандюк",
+        age: "41",
+        subject: "укр",
+        photo: "https://lyceum.ztu.edu.ua/wp-content/uploads/2023/04/borovska-karandyuk-iryna-anatoliyivna-683x1024.jpg",
+        url: "https://lyceum.ztu.edu.ua/team/borovska-karandyuk-iryna-anatoliyivna/",
+        education: "Вища",
+        rank:"«викладач-методист»"
+    },
+    {
+        firstName: "Ірина",
         lastName: "Глібко",
         age: "41",
         subject: "англ",

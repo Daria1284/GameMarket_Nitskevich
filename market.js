@@ -6,6 +6,16 @@
 let itemsArray = [
     {
         firstName: "Марія",
+        lastName: "Гетьманська",
+        age: "41",
+        subject: "психологія",
+        photo: "https://lyceum.ztu.edu.ua/wp-content/uploads/2023/04/hetmanska-mariya-oleksandrivna-683x1024.jpg",
+        url: "https://lyceum.ztu.edu.ua/team/hetmanska-m-o/",
+        education: "Вища",
+        rank:"«викладач-методист»"
+    },
+    {
+        firstName: "Марія",
         lastName: "Медведєва",
         age: "41",
         subject: "географія",

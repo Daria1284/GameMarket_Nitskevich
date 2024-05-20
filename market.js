@@ -5,6 +5,16 @@
 //Визначення масиву товарів
 let itemsArray = [
     {
+        firstName: "Анжела",
+        lastName: "Лознюк",
+        age: "41",
+        subject: "укр літ",
+        photo: "https://lyceum.ztu.edu.ua/wp-content/uploads/2023/10/photo_2023-10-25_15-46-33-1-693x1024.jpg",
+        url: "https://lyceum.ztu.edu.ua/team/loznyuk-anzhela-leonidivna/",
+        education: "Вища",
+        rank:"«викладач-методист»"
+    },
+    {
         firstName: "Вікторія",
         lastName: "Нелипович",
         age: "45",

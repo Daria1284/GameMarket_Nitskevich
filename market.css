@@ -63,11 +63,12 @@ content {
 
 .item-image {
     height: 200px;
-    background-image: url(img-market/1.png);
+    /* background-image: url(img-market/1.png); */
     background-size: 70%;
     background-repeat: no-repeat;
     background-position: center;
 }
+
 
 .parts-pay {
     display: flex;

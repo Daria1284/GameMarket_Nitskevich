@@ -58,6 +58,8 @@ content {
     font-weight: bold;
     max-width: 180x;
     min-height: 38px;
+    overflow: hidden;
+ 
     
 }
 

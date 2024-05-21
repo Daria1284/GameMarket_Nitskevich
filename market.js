@@ -7,31 +7,31 @@ let itemsArray = [
     {
         name: "Мотокоса 43",
         
-        price: "5499 грн",
-        discountPrice: "4497 грн",
-        couponPrice: "4395 грн",
+        price: "5499 ",
+        discountPrice: "4497 ",
+        couponPrice: "4395",
         
         photo: "https://hotline.ua/img/tx/319/3193450945.jpg"
     },
     {
         name: "Електричний тример 110",
-        price: "4497 грн",
-        discountPrice: "3498 грн",
-        couponPrice: "3396 грн",
+        price: "4497 ",
+        discountPrice: "3498",
+        couponPrice: "3396",
         photo: "https://static.dnipro-m.ua/origin/description/6566/design/m-110.jpg"
     },
     {
         name: "Електрична газонокосарка 32",
-         price: "4497 грн",
-        discountPrice: "3297 грн",
-        couponPrice: "3195 грн",
+         price: "4497",
+        discountPrice: "3297",
+        couponPrice: "3195",
         photo: "https://static.dnipro-m.ua/origin/description/6567/design/electric-mower-32.jpg"
     },
     {
         name: "Акумуляторний оприскувач 12 N",
-        price: "2190 грн",
-        discountPrice: "1698 грн",
-        couponPrice: "1596 грн",
+        price: "2190 ",
+        discountPrice: "1698",
+        couponPrice: "1596",
         photo: "https://hotline.ua/img/tx/449/4492289865.jpg"
     }  ,
    

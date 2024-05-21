@@ -28,7 +28,7 @@ let itemsArray = [
         photo: "https://static.dnipro-m.ua/origin/description/6567/design/electric-mower-32.jpg"
     },
     {
-        name: "Акумуляторний оприскувач 12 N",
+        name: "Акумуляторний обприскувач 12 N",
         price: "2 190 ",
         discountPrice: "1 698",
         couponPrice: "1 596",

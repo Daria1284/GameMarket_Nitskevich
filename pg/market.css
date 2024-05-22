@@ -1,0 +1,174 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto;
+    background: rgb(235, 216, 216);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+content {
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    gap: 10bodpx;
+    margin-top: 5px; 
+}
+
+
+.header {
+    background: rgb(173, 4, 4);
+    width: auto;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-transform: uppercase;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+    margin-top: 10px ;
+}
+
+.items {
+    min-width: 180px;
+    min-height: 320px;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+}
+
+.item {
+    width: 800px;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #ffffff;
+    border: 1px solid rgb(194, 194, 194);
+    border-radius: 5px;
+    box-shadow: 0 0 7px black;
+    
+}
+.bober{
+    font-weight: bold;
+}
+.item-title {
+    font-weight: bold;
+    max-width: 180px;
+    min-height: 38px;
+ 
+    
+}
+
+.item-image {
+    height: 200px;
+    /* background-image: url(img-market/1.png); */
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.parts-pay {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.parts-pay img {
+    height: 24px;
+}
+
+.prise {
+    border: 1px solid rgb(194, 194, 194);
+    border-radius: 5px;
+    padding: 5px 10px;
+    display: flex;
+    
+}
+
+.prise div:first-child {
+    width: 80px;
+    font-size: 20px;
+}
+
+.prise div:first-child span {
+    text-decoration-line: line-through;
+}
+
+.prise div:first-child sup {
+    font-size: 12px;
+}
+
+.prise div:last-child {
+    font-size: 24px;
+}
+
+.prise div:last-child sup {
+    font-size: 14px;
+}
+
+.bonus {
+    background: rgb(173, 4, 4);
+    color: white;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+    
+}
+
+.bonus div:first-child {
+    width: 80px;
+    font-size: 14px;
+}
+
+.bonus div:last-child {
+    font-size: 24px;
+}
+
+.bonus div:last-child sup {
+    font-size: 14px;
+}
+
+.info {
+    font-size: 9px;
+    text-align: justify;
+    color: grey;
+}
+
+
+
+.contacts p {
+    margin: 3px;
+}
+
+.contacts p:first-child {
+    font-weight: bold;
+}
+
+.contacts p:last-child {
+    border-left: 3px solid rgb(173, 4, 4);
+    padding-left: 5px;
+}
+
+.license {
+    font-size: 9px;
+    text-align: justify;
+    color: rgb(120, 120, 120);
+}
+button {
+    background-color: #a50e0e;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}

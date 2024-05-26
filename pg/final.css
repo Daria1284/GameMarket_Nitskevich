@@ -65,7 +65,7 @@ content {
 
 .item-image {
     height: 200px;
-    /* background-image: url(img-market/1.png); */
+    width: 400px;
     background-size: 70%;
     background-repeat: no-repeat;
     background-position: center;
@@ -75,9 +75,10 @@ content {
 .parts-pay {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    
     justify-content: center;
 }
+
 
 .parts-pay img {
     height: 24px;

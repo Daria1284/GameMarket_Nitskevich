@@ -246,7 +246,8 @@ if (itemsDiv) {
             <div class="item-title">${item.group}</div>
         </div>
         <div class="item-image">
-        <img src="${item.image}"  class="item-image">
+            <img src="${item.image}"  class="item-image">
+            <img src="${item.author_photo}"  class="item-image">
            
             
         </div>
@@ -267,6 +268,7 @@ if (itemsDiv) {
             a><div>
             <div><a href = "${item.stars}" target=_blank>Stars</
             a><div>
+            
             
             
           

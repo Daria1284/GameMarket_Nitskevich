@@ -69,6 +69,8 @@ content {
     background-size: 70%;
     background-repeat: no-repeat;
     background-position: center;
+    display: flex;
+    gap: 100px;
 }
 
 
@@ -121,6 +123,12 @@ content {
     align-items: center;
     margin-top: 5px;
     
+}
+.author_photo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 0 8px;
 }
 
 .bonus div:first-child {

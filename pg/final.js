@@ -119,7 +119,7 @@ let itemsArray = [
     {
         title: "Phaser2ndGame",
         author: "Будішевський Єгор",
-        author_photo: "Будішевський.jpg",
+        author_photo: "Будішевський Єгор.jpg",
         email: "23a_byeyu@liceum.ztu.edu.ua",
         group: "10-А 2",
         image: "img-market/08.jpg",

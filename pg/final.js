@@ -264,7 +264,7 @@ if (itemsDiv) {
             a><div>
             <div><a href = "${item.gamemarket_pages}" target=_blank>Gamemarket_pages</
             a><div>
-            <div><a href = "${item.market_pages}" target=_blank>Market_pages</
+            <div><a href = "${item.market_pages}" target=_blank>Market_pages 4</
             a><div>
             <div><a href = "${item.stars}" target=_blank>Stars</
             a><div>
